@@ -1,7 +1,7 @@
-package com.github.drtrang.te.demo;
+package com.github.drtrang.typehandlers;
 
-import com.github.drtrang.te.demo.domain.BaseCode;
-import com.github.drtrang.te.demo.mapper.BaseCodeMapper;
+import com.github.drtrang.typehandlers.domain.BaseCode;
+import com.github.drtrang.typehandlers.mapper.BaseCodeMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;

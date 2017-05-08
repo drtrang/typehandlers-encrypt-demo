@@ -1,4 +1,4 @@
-package com.github.drtrang.te.demo.domain;
+package com.github.drtrang.typehandlers.domain;
 
 import java.io.Serializable;
 import java.util.Date;

@@ -5,12 +5,12 @@ logging:
 spring:
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:mysql://10.33.106.239:3306/te_demo?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false
+    url: jdbc:mysql://10.33.106.239:3306/typehandlers_demo?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false
     username: root
     password: 123456
 
 mybatis:
-  type-aliases-package: com.github.drtrang.domain;com.github.drtrang.typehandlers.alias
+  type-aliases-package: com.github.drtrang.typehandlers.domain;com.github.drtrang.typehandlers.alias
   type-handlers-package: com.github.drtrang.typehandlers.type
   mapper-locations: mappers/*.xml
   check-config-location: false

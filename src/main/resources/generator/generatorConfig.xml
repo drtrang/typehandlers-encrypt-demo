@@ -28,7 +28,7 @@
             <property name="forceBigDecimals" value="false"/>
         </javaTypeResolver>
 
-        <javaModelGenerator targetPackage="com.github.drtrang.te.demo.domain" targetProject="src/main/java">
+        <javaModelGenerator targetPackage="com.github.drtrang.typehandlers.domain" targetProject="src/main/java">
             <property name="constructorBased" value="false"/>
             <property name="enableSubPackages" value="false"/>
             <property name="immutable" value="false"/>
@@ -37,7 +37,7 @@
 
         <sqlMapGenerator targetPackage="mappers" targetProject="src/main/resources"/>
 
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.github.drtrang.te.demo.mapper"
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.github.drtrang.typehandlers.mapper"
                              targetProject="src/main/java"/>
 
         <table tableName="m_base_code" domainObjectName="BaseCode">

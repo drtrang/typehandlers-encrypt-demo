@@ -1,9 +1,10 @@
-package com.github.drtrang.te.demo.mapper;
+package com.github.drtrang.typehandlers.mapper;
 
-import com.github.drtrang.te.demo.domain.BaseCode;
-import com.github.drtrang.te.demo.domain.BaseCodeExample;
-import java.util.List;
+import com.github.drtrang.typehandlers.domain.BaseCode;
+import com.github.drtrang.typehandlers.domain.BaseCodeExample;
 import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface BaseCodeMapper {
     /**
