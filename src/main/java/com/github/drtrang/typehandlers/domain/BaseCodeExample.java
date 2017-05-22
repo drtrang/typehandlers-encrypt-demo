@@ -584,6 +584,66 @@ public class BaseCodeExample {
             addCriterion("update_time not between", value1, value2, "updateTime");
             return (Criteria) this;
         }
+
+        public Criteria andIsEncryptIsNull() {
+            addCriterion("is_encrypt is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsEncryptIsNotNull() {
+            addCriterion("is_encrypt is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsEncryptEqualTo(Boolean value) {
+            addCriterion("is_encrypt =", value, "isEncrypt");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsEncryptNotEqualTo(Boolean value) {
+            addCriterion("is_encrypt <>", value, "isEncrypt");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsEncryptGreaterThan(Boolean value) {
+            addCriterion("is_encrypt >", value, "isEncrypt");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsEncryptGreaterThanOrEqualTo(Boolean value) {
+            addCriterion("is_encrypt >=", value, "isEncrypt");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsEncryptLessThan(Boolean value) {
+            addCriterion("is_encrypt <", value, "isEncrypt");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsEncryptLessThanOrEqualTo(Boolean value) {
+            addCriterion("is_encrypt <=", value, "isEncrypt");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsEncryptIn(List<Boolean> values) {
+            addCriterion("is_encrypt in", values, "isEncrypt");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsEncryptNotIn(List<Boolean> values) {
+            addCriterion("is_encrypt not in", values, "isEncrypt");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsEncryptBetween(Boolean value1, Boolean value2) {
+            addCriterion("is_encrypt between", value1, value2, "isEncrypt");
+            return (Criteria) this;
+        }
+
+        public Criteria andIsEncryptNotBetween(Boolean value1, Boolean value2) {
+            addCriterion("is_encrypt not between", value1, value2, "isEncrypt");
+            return (Criteria) this;
+        }
     }
 
     /**

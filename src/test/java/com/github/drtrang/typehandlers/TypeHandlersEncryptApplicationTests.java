@@ -2,6 +2,7 @@ package com.github.drtrang.typehandlers;
 
 import com.github.drtrang.typehandlers.domain.BaseCode;
 import com.github.drtrang.typehandlers.mapper.BaseCodeMapper;
+import com.github.drtrang.typehandlers.util.EncryptUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -18,6 +19,20 @@ public class TypeHandlersEncryptApplicationTests {
 
     @Autowired
     private BaseCodeMapper mapper;
+
+    @Test
+    public void encrypt() {
+        System.out.println(EncryptUtil.encrypt("000"));
+    }
+
+    @Test
+    public void sql() {
+        BaseCode code = new BaseCode();
+        code.setCodeType("sql");
+        code.setCodeValue("update");
+        code.setIsEncrypt(false);
+        mapper.insertSelective(code);
+    }
 
     @Test
     public void all() {
