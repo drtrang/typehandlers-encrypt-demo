@@ -1,5 +1,6 @@
-package com.github.drtrang.typehandlers;
+package com.github.drtrang.typehandlers.test;
 
+import com.github.drtrang.typehandlers.TypeHandlersEncryptApplication;
 import com.github.drtrang.typehandlers.domain.BaseCode;
 import com.github.drtrang.typehandlers.mapper.BaseCodeMapper;
 import com.github.drtrang.typehandlers.util.EncryptUtil;
