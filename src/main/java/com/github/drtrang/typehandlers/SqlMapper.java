@@ -43,7 +43,7 @@ public class SqlMapper {
         if (list.size() == 1) {
             return list.get(0);
         } else if (list.size() > 1) {
-            throw new TooManyResultsException("Expected one result (or null) to be returned by selectOne(), but found: " + list.size());
+            throw new TooManyResultsException("Expected one result (or null) to be returned by selectOne()," + " but found: " + list.size());
         } else {
             return null;
         }
@@ -276,9 +276,8 @@ public class SqlMapper {
             MappedStatement ms = new MappedStatement.Builder(configuration, msId, sqlSource, SqlCommandType.SELECT)
                     .resultMaps(new ArrayList<ResultMap>() {
                         private static final long serialVersionUID = 1L;
-
                         {
-                            add(new ResultMap.Builder(configuration, "defaultResultMap", resultType, new ArrayList<ResultMapping>(0)).build());
+                            add(new ResultMap.Builder(configuration, "defaultResultMap", resultType, new ArrayList<>(0)).build());
                         }
                     })
                     .build();
@@ -297,7 +296,6 @@ public class SqlMapper {
             MappedStatement ms = new MappedStatement.Builder(configuration, msId, sqlSource, sqlCommandType)
                     .resultMaps(new ArrayList<ResultMap>() {
                         private static final long serialVersionUID = 1L;
-
                         {
                             add(new ResultMap.Builder(configuration, "defaultResultMap", int.class, new ArrayList<>(0)).build());
                         }

@@ -144,7 +144,8 @@
         insert into m_base_code (id, code_type, code_value,
         remark, create_time, update_time,
         is_encrypt)
-        values (#{id,jdbcType=BIGINT}, #{codeType,jdbcType=VARCHAR}, #{codeValue,jdbcType=VARCHAR,javaType=encrypt},
+        values (#{id,jdbcType=BIGINT}, #{codeType,jdbcType=VARCHAR},
+        #{codeValue,jdbcType=VARCHAR,javaType=encrypt},
         #{remark,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP},
         #{isEncrypt,jdbcType=BIT})
     </insert>

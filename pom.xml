@@ -9,6 +9,29 @@
     <packaging>jar</packaging>
 
     <name>typehandlers-encrypt-demo</name>
+    <description>MyBatis Type Handlers for Encrypt Demo</description>
+    <url>https://github.com/drtrang/typehandlers-encrypt-demo</url>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>https://github.com/drtrang/typehandlers-encrypt-demo/blob/master/LICENSE</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>trang</name>
+            <email>donghao.l@hotmail.com</email>
+        </developer>
+    </developers>
+
+    <scm>
+        <url>https://github.com/drtrang/typehandlers-encrypt-demo.git</url>
+        <connection>scm:git:https://github.com/drtrang/typehandlers-encrypt-demo.git</connection>
+        <developerConnection>scm:git:https://github.com/drtrang</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -25,7 +48,7 @@
         <mybatis-spring-boot-starter.version>1.3.0</mybatis-spring-boot-starter.version>
         <mybatis-generator.version>1.3.5</mybatis-generator.version>
         <mybatis-generator-extension.version>1.0.0-SNAPSHOT</mybatis-generator-extension.version>
-        <typehandlers-encrypt.version>1.0.2-SNAPSHOT</typehandlers-encrypt.version>
+        <typehandlers-encrypt.version>1.0.2</typehandlers-encrypt.version>
     </properties>
 
     <dependencies>
