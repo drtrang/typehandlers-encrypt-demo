@@ -1,13 +1,14 @@
-package com.github.drtrang.typehandlers.test;
-
-import com.github.drtrang.typehandlers.util.ConfigUtil;
-import com.github.drtrang.typehandlers.util.EncryptUtil;
-import org.junit.Test;
+package com.github.trang.typehandlers.test;
 
 import java.util.ResourceBundle;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.atomic.AtomicInteger;
+
+import org.junit.Test;
+
+import com.github.trang.typehandlers.util.ConfigUtil;
+import com.github.trang.typehandlers.util.EncryptUtil;
 
 /**
  * @author trang

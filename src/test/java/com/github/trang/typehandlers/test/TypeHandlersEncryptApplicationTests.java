@@ -1,17 +1,22 @@
-package com.github.drtrang.typehandlers.test;
+package com.github.trang.typehandlers.test;
 
-import com.github.drtrang.typehandlers.TypeHandlersEncryptApplication;
-import com.github.drtrang.typehandlers.domain.BaseCode;
-import com.github.drtrang.typehandlers.mapper.BaseCodeMapper;
-import com.github.drtrang.typehandlers.util.EncryptUtil;
-import lombok.extern.slf4j.Slf4j;
+import java.util.List;
+
+import com.google.gson.Gson;
+import org.json.JSONObject;
+import org.json.JSONString;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import java.util.List;
+import com.github.trang.typehandlers.TypeHandlersEncryptApplication;
+import com.github.trang.typehandlers.domain.BaseCode;
+import com.github.trang.typehandlers.mapper.BaseCodeMapper;
+import com.github.trang.typehandlers.util.EncryptUtil;
+
+import lombok.extern.slf4j.Slf4j;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = TypeHandlersEncryptApplication.class)
@@ -38,7 +43,7 @@ public class TypeHandlersEncryptApplicationTests {
     @Test
     public void all() {
         List<BaseCode> baseCodes = mapper.selectByExample(null);
-        baseCodes.stream().map(BaseCode::getCodeValue).forEach(log::info);
+        baseCodes.stream().map(new Gson()::toJson).forEach(log::info);
     }
 
     @Test

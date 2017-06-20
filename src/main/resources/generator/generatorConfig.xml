@@ -28,19 +28,22 @@
             <property name="forceBigDecimals" value="false"/>
         </javaTypeResolver>
 
-        <javaModelGenerator targetPackage="com.github.drtrang.typehandlers.domain" targetProject="src/main/java">
+        <javaModelGenerator targetPackage="${target.package.model}" targetProject="${target.project.model}">
             <property name="constructorBased" value="false"/>
             <property name="enableSubPackages" value="false"/>
             <property name="immutable" value="false"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
 
-        <sqlMapGenerator targetPackage="mappers" targetProject="src/main/resources"/>
+        <sqlMapGenerator targetPackage="${target.package.xml}" targetProject="${target.project.xml}"/>
 
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.github.drtrang.typehandlers.mapper"
-                             targetProject="src/main/java"/>
+        <javaClientGenerator type="XMLMAPPER" targetPackage="${target.package.mapper}"
+                             targetProject="${target.project.mapper}"/>
 
         <table tableName="m_base_code" domainObjectName="BaseCode">
+            <generatedKey column="id" sqlStatement="JDBC"/>
         </table>
+
     </context>
+
 </generatorConfiguration>

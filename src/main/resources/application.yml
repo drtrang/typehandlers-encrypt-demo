@@ -10,8 +10,8 @@ spring:
     password: 123456
 
 mybatis:
-  type-aliases-package: com.github.drtrang.typehandlers.domain;com.github.drtrang.typehandlers.alias
-  type-handlers-package: com.github.drtrang.typehandlers.type
+  type-aliases-package: com.github.trang.typehandlers.domain;com.github.trang.typehandlers.alias
+  type-handlers-package: com.github.trang.typehandlers.type
   mapper-locations: mappers/*.xml
   check-config-location: false
   configuration:
