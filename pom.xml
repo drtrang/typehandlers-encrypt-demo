@@ -48,7 +48,7 @@
         <!-- 基础依赖 -->
         <mybatis-spring-boot-starter.version>1.3.0</mybatis-spring-boot-starter.version>
         <mybatis-generator.version>1.3.5</mybatis-generator.version>
-        <typehandlers-encrypt.version>1.0.3-SNAPSHOT</typehandlers-encrypt.version>
+        <typehandlers-encrypt.version>1.1.0</typehandlers-encrypt.version>
         <!-- Maven 插件 -->
         <maven-dependency-plugin.version>3.0.1</maven-dependency-plugin.version>
         <maven-clean-plugin.version>3.0.0</maven-clean-plugin.version>

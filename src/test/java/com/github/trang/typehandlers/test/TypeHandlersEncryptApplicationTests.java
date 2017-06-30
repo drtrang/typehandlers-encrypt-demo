@@ -1,22 +1,18 @@
 package com.github.trang.typehandlers.test;
 
-import java.util.List;
-
+import com.github.trang.typehandlers.TypeHandlersEncryptApplication;
+import com.github.trang.typehandlers.domain.BaseCode;
+import com.github.trang.typehandlers.mapper.BaseCodeMapper;
+import com.github.trang.typehandlers.util.EncryptUtil;
 import com.google.gson.Gson;
-import org.json.JSONObject;
-import org.json.JSONString;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import com.github.trang.typehandlers.TypeHandlersEncryptApplication;
-import com.github.trang.typehandlers.domain.BaseCode;
-import com.github.trang.typehandlers.mapper.BaseCodeMapper;
-import com.github.trang.typehandlers.util.EncryptUtil;
-
-import lombok.extern.slf4j.Slf4j;
+import java.util.List;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest(classes = TypeHandlersEncryptApplication.class)

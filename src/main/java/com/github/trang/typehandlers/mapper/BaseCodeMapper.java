@@ -1,11 +1,10 @@
 package com.github.trang.typehandlers.mapper;
 
-import java.util.List;
-
-import org.apache.ibatis.annotations.Param;
-
 import com.github.trang.typehandlers.domain.BaseCode;
 import com.github.trang.typehandlers.domain.BaseCodeExample;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 public interface BaseCodeMapper {
     /**
