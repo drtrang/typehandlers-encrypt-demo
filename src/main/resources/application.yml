@@ -1,22 +1,32 @@
+debug: false
+
 logging:
   level:
     root: info
+    com.github.trang: debug
+    executableSql: debug
 
 spring:
+  application:
+    name: typehandlers-encrypt-demo
   datasource:
-    type: com.zaxxer.hikari.HikariDataSource
-    url: jdbc:mysql://10.33.106.239:3306/typehandlers_demo?useUnicode=true&characterEncoding=UTF-8&serverTimezone=UTC&useSSL=false
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:file:./example
     username: root
     password: 123456
+    schema: classpath:import.sql
+  h2:
+    console:
+      enabled: true
+      settings:
+        trace: true
 
 mybatis:
   type-aliases-package: com.github.trang.typehandlers.domain;com.github.trang.typehandlers.alias
   type-handlers-package: com.github.trang.typehandlers.type
   mapper-locations: mappers/*.xml
-  check-config-location: false
   configuration:
     cache-enabled: false
-    lazy-loading-enabled: false
-    multiple-result-sets-enabled: true
-    safe-row-bounds-enabled: false
+    map-underscore-to-camel-case: true
     log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl
+    log-prefix: executableSql.

@@ -7,7 +7,7 @@
 
     <properties resource="generator/generator.properties"/>
 
-    <context id="house" defaultModelType="flat" targetRuntime="MyBatis3">
+    <context id="demo" defaultModelType="flat" targetRuntime="MyBatis3Simple">
 
         <property name="beginningDelimiter" value="`"/>
         <property name="endingDelimiter" value="`"/>
@@ -40,7 +40,7 @@
         <javaClientGenerator type="XMLMAPPER" targetPackage="${target.package.mapper}"
                              targetProject="${target.project.mapper}"/>
 
-        <table tableName="m_base_code" domainObjectName="BaseCode">
+        <table tableName="base_code" domainObjectName="BaseCode">
             <generatedKey column="id" sqlStatement="JDBC"/>
         </table>
 
